@@ -50,6 +50,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 0.625rem;
+  margin-top: 1rem;
 }
 .reviews:not(:last-child) {
   margin-bottom: 1rem;
