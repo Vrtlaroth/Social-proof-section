@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+.pattern-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mobile-pattern {
+  display: block;
+}
+
+.desktop-pattern {
+  display: none;
+}
+
+.hero__title {
+  font-size: 1.75rem;
+  color: #502050;
+  text-align: center;
+  padding: 5.1875rem 3.125rem 0 3.125rem;
+  margin-bottom: 2rem;
+}
+.hero__sub-title {
+  font-size: 0.9375rem;
+  color: #937b92;
+  text-align: center;
+  padding: 0 1.875rem;
+  line-height: 1.75rem;
+  margin-bottom: 3.125rem;
+}
+
+.reviews {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.reviews .review {
+  padding: 1rem auto;
+  background: #f7f2f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.625rem;
+}
+.reviews:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.reviews .stars-container {
+  display: flex;
+  width: 7.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews__text {
+  margin-top: 1rem;
+  color: #502050;
+  font-weight: 700;
+}
+
+.testimonials {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 3.125rem;
+}
+.testimonials .testimonial {
+  background-color: #502050;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2.5rem 2rem;
+}
+.testimonials .testimonial:not(:last-child) {
+  margin-bottom: 1.125rem;
+}
+.testimonials .testimonial .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.testimonials .testimonial .profile img {
+  border-radius: 50%;
+  width: 2.5625rem;
+  height: 2.5625rem;
+  margin-right: 1.1375rem;
+}
+.testimonials .testimonial .profile__text__name {
+  font-size: 0.875rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+}
+.testimonials .testimonial .profile__text__title {
+  color: #ee68a4;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.testimonials .testimonial__text {
+  font-size: 0.875rem;
+  color: white;
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 798px) {
+  .pattern-top .mobile-pattern {
+    display: block;
+    pointer-events: none;
+  }
+  .pattern-top .desktop-pattern {
+    display: none;
+    pointer-events: none;
+  }
+
+  .heroPlusReviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  * {
+    flex: 1;
+  }
+
+  .hero {
+    padding: 8rem 0 0 10rem;
+    max-width: 38rem;
+    margin-right: 9.125rem;
+  }
+  .hero__title {
+    font-size: 2.5625rem;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  .hero__sub-title {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .reviews .review {
+    display: flex;
+    flex-direction: row;
+    padding: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    max-width: 35rem;
+  }
+  .reviews .review:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+  .reviews .review:nth-child(2) {
+    transform: translateX(3rem);
+  }
+  .reviews .review:nth-child(3) {
+    transform: translateX(6rem);
+  }
+  .reviews .stars-container {
+    margin-right: 2rem;
+    max-width: 10rem;
+  }
+  .reviews .stars-container img:not(:last-child) {
+    margin-right: 0.625rem;
+  }
+  .reviews__text {
+    margin: 0;
+  }
+
+  .testimonials {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-top: 4.75rem;
+    display: flex;
+  }
+  .testimonials .testimonial {
+    padding: 2.5rem;
+  }
+  .testimonials .testimonial:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+  .testimonials .testimonial:nth-child(2) {
+    margin-top: 2rem;
+  }
+  .testimonials .testimonial:nth-child(3) {
+    margin-top: 4rem;
+  }
+  .testimonials .testimonial .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .testimonials .testimonial .profile img {
+    border-radius: 50%;
+    width: 2.5625rem;
+    height: 3.5625rem;
+    margin-right: 1.1375rem;
+  }
+  .testimonials .testimonial .profile__text__name {
+    font-size: 0.875rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.625rem;
+  }
+  .testimonials .testimonial .profile__text__title {
+    color: #ee68a4;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+  .testimonials .testimonial__text {
+    font-size: 0.875rem;
+    color: white;
+    line-height: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

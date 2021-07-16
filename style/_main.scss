@@ -1,0 +1,301 @@
+@import "./global";
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+.pattern-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+.mobile-pattern{
+  display:block;
+}
+
+.desktop-pattern {
+  display: none;
+}
+
+.hero {
+  &__title {
+    font-size: 1.75rem;
+    color: $veryDarkMagenta;
+    text-align: center;
+    padding: 5.1875rem 3.125rem 0 3.125rem;
+    margin-bottom: 2rem;
+  }
+
+  &__sub-title {
+    font-size: 0.9375rem;
+    color: $darkGrayishMagenta;
+    text-align: center;
+    padding: 0 1.875rem;
+    line-height: 1.75rem;
+    margin-bottom: 3.125rem ;
+  }
+}
+
+.reviews {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  .review{
+    padding: 1rem auto;
+    background: $lightGrayishMagenta;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.625rem;
+
+
+  }
+
+  &:not(:last-child){
+    margin-bottom: 1rem;
+  }
+
+  .stars-container {
+    display: flex;
+    width: 7.5rem;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  &__text{
+    margin-top: 1rem;
+    color: $veryDarkMagenta;
+    font-weight: $bold_weight;
+
+  }
+
+}
+
+.testimonials {
+  padding-left: 1.5rem;
+  padding-right:1.5rem;
+  margin-top:3.125rem ;
+  
+
+  .testimonial {
+
+    background-color: $veryDarkMagenta;
+    border-radius: 1rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    padding: 2.5rem 2rem;
+    
+
+    &:not(:last-child){
+      margin-bottom: 1.125rem;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      margin-bottom:2rem;
+
+      img {
+        border-radius:50%;
+        width: 2.5625rem;
+        height: 2.5625rem;
+        margin-right: 1.1375rem;
+
+      }
+
+      &__text{
+
+        &__name {
+          font-size: 0.875rem;
+          color: $white;
+          font-weight: $bold_weight;
+          margin-bottom: 0.625rem;
+
+        }
+        &__title{
+          color: $softPink;
+          font-size: 0.875rem;
+          font-weight: $normal_weight;
+
+        }
+      }
+    }
+
+    &__text{
+      font-size: 0.875rem;
+      color: $white;
+      line-height: 2rem;
+    }
+
+  }
+
+ 
+}
+
+@media screen and (min-width: 798px){
+  .pattern-top {
+      .mobile-pattern{
+        display: block;
+        pointer-events: none;
+      }
+      .desktop-pattern{
+        display: none;
+        pointer-events: none;
+      }
+  }
+
+  .heroPlusReviews {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+  }
+  * {
+    flex:1;
+  }
+   
+  .hero{
+    padding:8rem 0 0 10rem;
+    max-width: 38rem;
+    margin-right: 9.125rem;
+
+    &__title{
+      font-size: 2.5625rem;
+      text-align: left;
+      padding: 0;
+      margin-bottom: 1rem;
+      
+    }
+
+    &__sub-title{
+      text-align: left;
+      font-size: 1rem;
+    
+    }
+
+  }
+
+  .reviews{
+
+      .review{
+        display: flex;
+        flex-direction: row;
+        padding:1.25rem;
+        align-items: center;
+        justify-content:center;
+        padding: 1.25rem;
+        max-width: 35rem;
+
+        &:not(:last-child){
+          margin-bottom:1.25rem;
+        }
+
+        &:nth-child(2){
+          transform: translateX(3rem);
+        }
+
+        &:nth-child(3){
+          transform: translateX(6rem);
+        }
+
+      }
+
+      .stars-container{
+        margin-right: 2rem;
+        max-width: 10rem;
+
+        img{
+          &:not(:last-child){
+            margin-right: 0.625rem;
+          }
+        }
+      }
+
+      &__text{
+        margin: 0;
+      }
+  }
+    
+
+    .testimonials {
+      padding-left: 10rem;
+      padding-right:10rem;
+      margin-top:4.75rem ;
+      display: flex;
+      
+      
+
+    
+      .testimonial {
+        
+        padding: 2.5rem;
+        
+    
+        &:not(:last-child){
+          margin-bottom: 0;
+          margin-right: 2rem;
+        }
+
+        &:nth-child(2){
+          margin-top:2rem;
+        }
+
+        &:nth-child(3){
+          margin-top:4rem;
+        }
+    
+        .profile {
+          display: flex;
+          align-items: center;
+          justify-content:center;
+          margin-bottom:2rem;
+    
+          img {
+            border-radius:50%;
+            width: 2.5625rem;
+            height: 3.5625rem;
+            margin-right: 1.1375rem;
+    
+          }
+    
+          &__text{
+    
+            &__name {
+              font-size: 0.875rem;
+              color: $white;
+              font-weight: $bold_weight;
+              margin-bottom: 0.625rem;
+    
+            }
+            &__title{
+              color: $softPink;
+              font-size: 0.875rem;
+              font-weight: $normal_weight;
+    
+            }
+          }
+        }
+    
+        &__text{
+          font-size: 0.875rem;
+          color: $white;
+          line-height: 2rem;
+        }
+    
+      }
+    
+     
+    }
+}
